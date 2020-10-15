@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Verizon Tasks</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Verizon Tasks</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">cd46eca7db1310100080e1bb4b961970</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 13:58:21</sys_created_on>
+        <sys_id>44552592db2310100080e1bb4b9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verizon Tasks</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_wizard_answer_44552592db2310100080e1bb4b9619e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 13:58:21</sys_updated_on>
+        <table/>
+        <target_url>x_537510_verizon_t_verizon_tasks.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_wizard_answer_44552592db2310100080e1bb4b9619e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Verizon Tasks</answer><button_label/><dependent_value/><element/><name>Verizon Tasks</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">cd46eca7db1310100080e1bb4b961970</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-10-01 13:58:21</sys_created_on><sys_id>44552592db2310100080e1bb4b9619e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Verizon Tasks</sys_name><sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package><sys_policy/><sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope><sys_update_name>sys_wizard_answer_44552592db2310100080e1bb4b9619e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-10-01 13:58:21</sys_updated_on><table/><target_url>x_537510_verizon_t_verizon_tasks.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-256711446</payload_hash>
+        <record_name>Verizon Tasks</record_name>
+        <reverted_from/>
+        <source>9bb9b023db1310100080e1bb4b9619c9</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2020-09-22 21:44:41</sys_created_on>
+        <sys_id>e95ae596db2310100080e1bb4b961915</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>174b7c69d280000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>a95ae596082310109f402a67f0e7f915</update_guid>
+        <update_guid_history>a95ae596082310109f402a67f0e7f915:-256711446</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 14:20:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>0d00c39758d04ca5ada8b27b05631011</sys_id>
+        <sys_metadata>44552592db2310100080e1bb4b9619e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verizon Tasks</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent display_value="Task">cd46eca7db1310100080e1bb4b961970</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_44552592db2310100080e1bb4b9619e1</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_44552592db2310100080e1bb4b9619e1">e95ae596db2310100080e1bb4b961915</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:20:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

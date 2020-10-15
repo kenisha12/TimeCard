@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_537510_verizon_t_verizon_tasks">x_537510_verizon_t_verizon_tasks</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>VERTASK</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 14:00:37</sys_created_on>
+        <sys_id>d1d5e592db2310100080e1bb4b96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VERTASK</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_number_d1d5e592db2310100080e1bb4b96193d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:00:37</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_number_d1d5e592db2310100080e1bb4b96193d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_537510_verizon_t_verizon_tasks">x_537510_verizon_t_verizon_tasks</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>VERTASK</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-10-01 14:00:37</sys_created_on><sys_id>d1d5e592db2310100080e1bb4b96193d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>VERTASK</sys_name><sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package><sys_policy/><sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope><sys_update_name>sys_number_d1d5e592db2310100080e1bb4b96193d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-10-01 14:00:37</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-178769048</payload_hash>
+        <record_name>VERTASK</record_name>
+        <reverted_from/>
+        <source>bdc95024db2310100080e1bb4b9619d2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 14:00:38</sys_created_on>
+        <sys_id>91d5e992db2310100080e1bb4b9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174e476ff780000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:00:38</sys_updated_on>
+        <type>Number</type>
+        <update_guid>d9d5e99286231010e940e70d0aa776bd</update_guid>
+        <update_guid_history>d9d5e99286231010e940e70d0aa776bd:-178769048</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 14:20:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>597b27a8c2984c7a90f52350df147079</sys_id>
+        <sys_metadata>d1d5e592db2310100080e1bb4b96193d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VERTASK</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent display_value="">2ef42192db2310100080e1bb4b961985</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_number_d1d5e592db2310100080e1bb4b96193d</sys_update_name>
+        <sys_update_version display_value="sys_number_d1d5e592db2310100080e1bb4b96193d">91d5e992db2310100080e1bb4b9619be</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:20:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

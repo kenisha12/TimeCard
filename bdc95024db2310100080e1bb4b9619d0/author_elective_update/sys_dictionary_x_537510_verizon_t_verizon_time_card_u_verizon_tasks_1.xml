@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="u_verizon_tasks_1" table="x_537510_verizon_t_verizon_time_card">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>encode_utf8=false</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Verizon Tasks</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_verizon_tasks_1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <name>x_537510_verizon_t_verizon_time_card</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_537510_verizon_t_verizon_tasks">x_537510_verizon_t_verizon_tasks</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-26 00:01:00</sys_created_on>
+        <sys_id>69b5f468db6310100080e1bb4b96191b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Verizon Tasks</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_dictionary_x_537510_verizon_t_verizon_time_card_u_verizon_tasks_1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:15:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_dictionary_x_537510_verizon_t_verizon_time_card_u_verizon_tasks_1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_verizon_tasks_1" table="x_537510_verizon_t_verizon_time_card"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes>encode_utf8=false</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Verizon Tasks</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_verizon_tasks_1</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>x_537510_verizon_t_verizon_time_card</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="x_537510_verizon_t_verizon_tasks">x_537510_verizon_t_verizon_tasks</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-26 00:01:00</sys_created_on><sys_id>69b5f468db6310100080e1bb4b96191b</sys_id><sys_mod_count>9</sys_mod_count><sys_name>Verizon Tasks</sys_name><sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package><sys_policy/><sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope><sys_update_name>sys_dictionary_x_537510_verizon_t_verizon_time_card_u_verizon_tasks_1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-10-01 14:15:39</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>2093412129</payload_hash>
+        <record_name>Verizon Time Card.Verizon Tasks</record_name>
+        <reverted_from/>
+        <source>bdc95024db2310100080e1bb4b9619d2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 14:15:39</sys_created_on>
+        <sys_id>21492956db2310100080e1bb4b961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174e484c1980000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:15:39</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>a949295642231010667144c9fe06ff18</update_guid>
+        <update_guid_history>a949295642231010667144c9fe06ff18:2093412129,8019255645231010386174aed0118c4c:-2123970742,ae362542f9e310104e674a99a6a6980b:774861472,64e52d026ee310101a0c092d3a02e733:1311485940,a5e3f87dcb6710101bc96bbc6fbd68f6:774861472,52eb37a500e3101078f647c252a0a62d:1311485940,a5c9435d4b6310109eb2f53f6cc0ed01:774861472,66c8c31dfb63101092a3a8721b837990:1311485940,a1e5b8685f631010de98d55d7670fe42:774861472,f5b5f468ed631010f821acc82c9a693f:-1993031905</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-01 14:20:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>ccc9b92de08a4d13b132be6efdad5401</sys_id>
+        <sys_metadata>69b5f468db6310100080e1bb4b96191b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verizon Tasks</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent display_value="Verizon Time Card">022b9c64db2310100080e1bb4b96195e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_537510_verizon_t_verizon_time_card_u_verizon_tasks_1</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_537510_verizon_t_verizon_time_card_u_verizon_tasks_1">21492956db2310100080e1bb4b961919</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-01 14:20:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

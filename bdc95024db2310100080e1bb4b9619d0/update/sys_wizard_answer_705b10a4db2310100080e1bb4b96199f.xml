@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Verizon Time Card </answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Verizon Time Card </name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">cd46eca7db1310100080e1bb4b961970</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-25 22:05:43</sys_created_on>
+        <sys_id>705b10a4db2310100080e1bb4b96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verizon Time Card</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_wizard_answer_705b10a4db2310100080e1bb4b96199f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-25 22:05:43</sys_updated_on>
+        <table/>
+        <target_url>x_537510_verizon_t_verizon_time_card.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_537510_verizon_t_verizon_time_card</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Validate week start</name>
+        <order>400</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+var weekStarts = current.getValue('u_week_starts_on');
+		
+	var gd1 = new GlideDate(); 
+		gd1.setValue(weekStarts); 
+	var expectedStartDay = gd1.getDayOfWeekUTC();
+	
+	if(expectedStartDay != 1){
+			
+		gs.setError('This is not a Monday');
+		//gs.addErrorMessage('This is not a Monday')
+			current.setAbortAction(true);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-25 22:52:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68e5e82cdb2310100080e1bb4b961920</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Validate week start</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_script_68e5e82cdb2310100080e1bb4b961920</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 21:38:16</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=68e5e82cdb2310100080e1bb4b961920"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_script_68e5e82cdb2310100080e1bb4b961920</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_537510_verizon_t_verizon_time_card&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Validate week start&lt;/name&gt;&lt;order&gt;400&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+var weekStarts = current.getValue('u_week_starts_on');
+		
+	var gd1 = new GlideDate(); 
+		gd1.setValue(weekStarts); 
+	var expectedStartDay = gd1.getDayOfWeekUTC();
+	
+	if(expectedStartDay != 1){
+			
+		gs.setError('This is not a Monday');
+		//gs.addErrorMessage('This is not a Monday')
+			current.setAbortAction(true);
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-25 22:52:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;68e5e82cdb2310100080e1bb4b961920&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate week start&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t"&gt;bdc95024db2310100080e1bb4b9619d0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Verizon Time Card App"&gt;bdc95024db2310100080e1bb4b9619d0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_68e5e82cdb2310100080e1bb4b961920&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 21:38:16&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=68e5e82cdb2310100080e1bb4b961920"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1677965411</payload_hash>
+        <record_name>Validate week start</record_name>
+        <reverted_from/>
+        <source>bdc95024db2310100080e1bb4b9619d2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 21:38:16</sys_created_on>
+        <sys_id>00d1b319dbe310100080e1bb4b9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174d6a6e6e70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 21:38:16</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>08d1b3195fe310101cca95fae23f33c2</update_guid>
+        <update_guid_history>08d1b3195fe310101cca95fae23f33c2:1677965411,5711bbd526e310103ec7265797139fa7:679271734,58e073d5d2e31010c58e498e48c85402:-2029490871,ae2620ac22231010b9a88719dce1b453:-102745928,bc16a86cf92310105dbaaa6042bb9a51:-1264814498</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 21:39:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>bc102614a28848c4b9e85121da5fc851</sys_id>
+        <sys_metadata>68e5e82cdb2310100080e1bb4b961920</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate week start</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent display_value="Verizon Time Card">022b9c64db2310100080e1bb4b96195e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_script_68e5e82cdb2310100080e1bb4b961920</sys_update_name>
+        <sys_update_version display_value="sys_script_68e5e82cdb2310100080e1bb4b961920">00d1b319dbe310100080e1bb4b9619c3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 21:39:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

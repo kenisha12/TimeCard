@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_537510_verizon_t.getDay</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>getDay</name>
+        <script><![CDATA[var getDay = Class.create();
+getDay.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+
+   getDayOfWeek: function(){
+
+
+   var date = new GlideDateTime(this.getParameter('sysparm_date'));
+
+
+   var dow = date.getDayOfWeekLocalTime();
+
+
+
+   return dow;
+
+
+   },
+
+
+   type: 'getDay'
+
+
+});
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-29 12:57:11</sys_created_on>
+        <sys_id>99c30b2ddb2310100080e1bb4b9619fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>getDay</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_script_include_99c30b2ddb2310100080e1bb4b9619fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-29 12:58:37</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_script_include_99c30b2ddb2310100080e1bb4b9619fc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_537510_verizon_t.getDay&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;getDay&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var getDay = Class.create();
+getDay.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+
+   getDayOfWeek: function(){
+
+
+   var date = new GlideDateTime(this.getParameter('sysparm_date'));
+
+
+   var dow = date.getDayOfWeekLocalTime();
+
+
+
+   return dow;
+
+
+   },
+
+
+   type: 'getDay'
+
+
+});
+
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-29 12:57:11&lt;/sys_created_on&gt;&lt;sys_id&gt;99c30b2ddb2310100080e1bb4b9619fc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;getDay&lt;/sys_name&gt;&lt;sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t"&gt;bdc95024db2310100080e1bb4b9619d0&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Verizon Time Card App"&gt;bdc95024db2310100080e1bb4b9619d0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_99c30b2ddb2310100080e1bb4b9619fc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-29 12:58:37&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>513173110</payload_hash>
+        <record_name>getDay</record_name>
+        <reverted_from/>
+        <source>bdc95024db2310100080e1bb4b9619d2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-29 12:58:37</sys_created_on>
+        <sys_id>7974436ddb2310100080e1bb4b961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174d9f1820b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-29 12:58:37</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f174436df6231010a5b77662cf023f81</update_guid>
+        <update_guid_history>f174436df6231010a5b77662cf023f81:513173110,b024c72d65231010acc77f375bb14ba7:-1495144089</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-29 12:58:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>3e848ee311684c249199ca37130c75a4</sys_id>
+        <sys_metadata>99c30b2ddb2310100080e1bb4b9619fc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getDay</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_script_include_99c30b2ddb2310100080e1bb4b9619fc</sys_update_name>
+        <sys_update_version display_value="sys_script_include_99c30b2ddb2310100080e1bb4b9619fc">7974436ddb2310100080e1bb4b961981</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-29 12:58:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

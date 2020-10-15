@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicators">
+    <pa_indicators action="INSERT_OR_UPDATE">
+        <aggregate>1</aggregate>
+        <allow_multi_element_aggregation>false</allow_multi_element_aggregation>
+        <benchmarking>false</benchmarking>
+        <collect_breakdown_matrix>false</collect_breakdown_matrix>
+        <collect_records>true</collect_records>
+        <conditions/>
+        <contributor/>
+        <cube display_value="VerizonTimeCard.Rejected">1a8f2142dbe310100080e1bb4b9619ac</cube>
+        <data_source/>
+        <default_aggregate/>
+        <default_chart_type>line</default_chart_type>
+        <description>Number of rejected time cards is measured monthly as unit #.
+The goal for this indicator is to minimize.
+It is the count on data source VerizonTimeCard.Rejected, which is using the table: 
+x_537510_verizon_t_verizon_time_card
+with the following conditions:
+State = Rejected .and. Total &gt; 40</description>
+        <direction>2</direction>
+        <display>false</display>
+        <excluded_statistics/>
+        <field>active</field>
+        <forecast_base_periods>2</forecast_base_periods>
+        <forecast_base_start>00000000</forecast_base_start>
+        <forecast_base_type>1</forecast_base_type>
+        <forecast_lower_limit/>
+        <forecast_method>1</forecast_method>
+        <forecast_periods>2</forecast_periods>
+        <forecast_upper_limit/>
+        <formula/>
+        <formula_aggregate_whole>false</formula_aggregate_whole>
+        <formula_allow_null>false</formula_allow_null>
+        <frequency>40</frequency>
+        <groups/>
+        <has_managed_indicators>false</has_managed_indicators>
+        <id>347</id>
+        <key>false</key>
+        <label/>
+        <linked_indicator/>
+        <live_group_profile/>
+        <managed_breakdown/>
+        <managed_element/>
+        <managing_indicator/>
+        <name>Number of rejected time cards</name>
+        <order/>
+        <override_periods>false</override_periods>
+        <precision>0</precision>
+        <related_breakdowns>0</related_breakdowns>
+        <related_jobs>1</related_jobs>
+        <render_continuous_lines>false</render_continuous_lines>
+        <role_override>true</role_override>
+        <roles/>
+        <score_periods>-1</score_periods>
+        <scores_modified_at>2020-10-14 04:00:21</scores_modified_at>
+        <script/>
+        <scripted>false</scripted>
+        <show_delta>true</show_delta>
+        <show_realtime_score>false</show_realtime_score>
+        <snapshot_periods>-1</snapshot_periods>
+        <sql_statement/>
+        <sys_class_name>pa_indicators</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-30 20:41:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6808754edbe310100080e1bb4b9619c9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Number of rejected time cards</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>pa_indicators_6808754edbe310100080e1bb4b9619c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-02 17:43:23</sys_updated_on>
+        <type>1</type>
+        <unit display_value="%">f9c365e2d7320100ba986f14ce6103b8</unit>
+        <users/>
+        <value_when_nil>0</value_when_nil>
+        <visible_to>2</visible_to>
+    </pa_indicators>
+    <sys_translated_text action="delete_multiple" query="documentkey=6808754edbe310100080e1bb4b9619c9"/>
+</record_update>

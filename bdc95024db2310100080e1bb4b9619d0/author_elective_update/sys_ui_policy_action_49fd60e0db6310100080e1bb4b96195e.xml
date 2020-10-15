@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_monday</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-25 23:27:21</sys_created_on>
+        <sys_id>49fd60e0db6310100080e1bb4b96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_monday</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_49fd60e0db6310100080e1bb4b96195e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-25 23:27:21</sys_updated_on>
+        <table>x_537510_verizon_t_verizon_time_card</table>
+        <ui_policy display_value="Make days of the week mandatory &amp; week starts on">25a720ecdb2310100080e1bb4b9619e7</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_ui_policy_action_49fd60e0db6310100080e1bb4b96195e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>u_monday</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-25 23:27:21</sys_created_on><sys_id>49fd60e0db6310100080e1bb4b96195e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_monday</sys_name><sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package><sys_policy/><sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope><sys_update_name>sys_ui_policy_action_49fd60e0db6310100080e1bb4b96195e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-25 23:27:21</sys_updated_on><table>x_537510_verizon_t_verizon_time_card</table><ui_policy display_value="Make days of the week mandatory &amp; week starts on">25a720ecdb2310100080e1bb4b9619e7</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-246315954</payload_hash>
+        <record_name>u_monday</record_name>
+        <reverted_from/>
+        <source>bdc95024db2310100080e1bb4b9619d2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-25 23:27:21</sys_created_on>
+        <sys_id>ec0e60e0db6310100080e1bb4b961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174c797b0fa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-25 23:27:21</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>280e60e0e6631010eae445b0cf935e65</update_guid>
+        <update_guid_history>280e60e0e6631010eae445b0cf935e65:-246315954</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-26 00:59:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>ad55d82ce3764a9089cfb74e9d493e40</sys_id>
+        <sys_metadata>49fd60e0db6310100080e1bb4b96195e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_monday</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent display_value="Make days of the week mandatory &amp; week starts on">25a720ecdb2310100080e1bb4b9619e7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_49fd60e0db6310100080e1bb4b96195e</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_49fd60e0db6310100080e1bb4b96195e">ec0e60e0db6310100080e1bb4b961965</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-26 00:59:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_537510_verizon_t.TimeCardUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TimeCardUtil</name>
+        <script><![CDATA[var TimeCardUtil = Class.create();
+TimeCardUtil.dayNames = ["", "u_float_1", "u_float_2", "u_float_3", "u_float_4", "u_float_5"];
+
+TimeCardUtil.getStartOfCurrentWeek = function(userId) {
+    var todayDateTime = new GlideDateTime();
+    var today = new GlideDate();
+    today.setDisplayValue(todayDateTime.getDisplayValue());
+    if (gs.nil(userId))
+        userId = gs.getUserID();
+    return TimeCardUtil.getStartOfWeekByDate(today, userId);
+};
+
+TimeCardUtil.getStartOfNextWeek = function(userId) {
+    var nextWeekStart = TimeCardUtil.getStartOfCurrentWeek(userId);
+    nextWeekStart.addDaysUTC(5);
+    return nextWeekStart;
+};
+
+TimeCardUtil.getStartOfLastWeek = function(userId) {
+    var lastWeekStart = TimeCardUtil.getStartOfCurrentWeek(userId);
+    lastWeekStart.addDaysUTC(-5);
+    return lastWeekStart;
+};
+
+TimeCardUtil.getStartOfWeekByDate = function(aDate, userId) {
+    var weekStarts = current.getValue('u_week_starts_on');
+	var timeSheetPolicy = weekStarts.getFromUserId(userId);
+    var firstDayOfWeek = timeSheetPolicy.weekStartsOn();
+
+    var gd = new GlideDate();
+    gd.setValue(aDate);
+    var currentDay = gd.getDayOfWeekUTC();
+
+    var daysInWeek = 5;
+    var daysToMoveBehind = (firstDayOfWeek - currentDay - daysInWeek) % daysInWeek;
+    gd.addDaysUTC(daysToMoveBehind);
+
+    return gd;
+};
+
+TimeCardUtil.getWeekStartsOnDateTimeForUser = function(weekStartsOnDate, userId) {
+    var gr = new GlideRecord('sys_user');
+    gr.get(userId);
+    var timeZoneId = gr.getValue('time_zone');
+    var timeZone;
+    if (JSUtil.nil(timeZoneId))
+        timeZone = gs.getSession().getTimeZone();
+    else
+        timeZone = Packages.java.util.TimeZone.getTimeZone(timeZoneId);
+
+    var weekStartsOnDateTimeForUser = new GlideDateTime();
+    weekStartsOnDateTimeForUser.setTZ(timeZone);
+    weekStartsOnDateTimeForUser.setDisplayValueInternal(weekStartsOnDate + ' 00:00:00');
+    return weekStartsOnDateTimeForUser;
+};
+
+
+TimeCardUtil.prototype = {
+    initialize: function() {
+    },
+
+    type: 'TimeCardUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 18:10:52</sys_created_on>
+        <sys_id>a231cb95db6310100080e1bb4b961946</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>TimeCardUtil</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_update_name>sys_script_include_a231cb95db6310100080e1bb4b961946</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 21:29:23</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</application>
+        <file_path/>
+        <instance_id>56fcd5efdbbf13041ddcf22ebf9619d9</instance_id>
+        <instance_name>dev70341</instance_name>
+        <name>sys_script_include_a231cb95db6310100080e1bb4b961946</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_537510_verizon_t.TimeCardUtil&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;TimeCardUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TimeCardUtil = Class.create();
+TimeCardUtil.dayNames = ["", "u_float_1", "u_float_2", "u_float_3", "u_float_4", "u_float_5"];
+
+TimeCardUtil.getStartOfCurrentWeek = function(userId) {
+    var todayDateTime = new GlideDateTime();
+    var today = new GlideDate();
+    today.setDisplayValue(todayDateTime.getDisplayValue());
+    if (gs.nil(userId))
+        userId = gs.getUserID();
+    return TimeCardUtil.getStartOfWeekByDate(today, userId);
+};
+
+TimeCardUtil.getStartOfNextWeek = function(userId) {
+    var nextWeekStart = TimeCardUtil.getStartOfCurrentWeek(userId);
+    nextWeekStart.addDaysUTC(5);
+    return nextWeekStart;
+};
+
+TimeCardUtil.getStartOfLastWeek = function(userId) {
+    var lastWeekStart = TimeCardUtil.getStartOfCurrentWeek(userId);
+    lastWeekStart.addDaysUTC(-5);
+    return lastWeekStart;
+};
+
+TimeCardUtil.getStartOfWeekByDate = function(aDate, userId) {
+    var weekStarts = current.getValue('u_week_starts_on');
+	var timeSheetPolicy = weekStarts.getFromUserId(userId);
+    var firstDayOfWeek = timeSheetPolicy.weekStartsOn();
+
+    var gd = new GlideDate();
+    gd.setValue(aDate);
+    var currentDay = gd.getDayOfWeekUTC();
+
+    var daysInWeek = 5;
+    var daysToMoveBehind = (firstDayOfWeek - currentDay - daysInWeek) % daysInWeek;
+    gd.addDaysUTC(daysToMoveBehind);
+
+    return gd;
+};
+
+TimeCardUtil.getWeekStartsOnDateTimeForUser = function(weekStartsOnDate, userId) {
+    var gr = new GlideRecord('sys_user');
+    gr.get(userId);
+    var timeZoneId = gr.getValue('time_zone');
+    var timeZone;
+    if (JSUtil.nil(timeZoneId))
+        timeZone = gs.getSession().getTimeZone();
+    else
+        timeZone = Packages.java.util.TimeZone.getTimeZone(timeZoneId);
+
+    var weekStartsOnDateTimeForUser = new GlideDateTime();
+    weekStartsOnDateTimeForUser.setTZ(timeZone);
+    weekStartsOnDateTimeForUser.setDisplayValueInternal(weekStartsOnDate + ' 00:00:00');
+    return weekStartsOnDateTimeForUser;
+};
+
+
+TimeCardUtil.prototype = {
+    initialize: function() {
+    },
+
+    type: 'TimeCardUtil'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-28 18:10:52&lt;/sys_created_on&gt;&lt;sys_id&gt;a231cb95db6310100080e1bb4b961946&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;TimeCardUtil&lt;/sys_name&gt;&lt;sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t"&gt;bdc95024db2310100080e1bb4b9619d0&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Verizon Time Card App"&gt;bdc95024db2310100080e1bb4b9619d0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a231cb95db6310100080e1bb4b961946&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 21:29:23&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>583137054</payload_hash>
+        <record_name>TimeCardUtil</record_name>
+        <reverted_from/>
+        <source>bdc95024db2310100080e1bb4b9619d2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 21:29:23</sys_created_on>
+        <sys_id>4acfeb95dbe310100080e1bb4b961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174d69ec6b90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 21:29:23</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c2cfeb9523e3101012075f5ea0056d41</update_guid>
+        <update_guid_history>c2cfeb9523e3101012075f5ea0056d41:583137054,dc88e35117e3101054b201e6dc75dcc8:-753017715,7c486b5132e310109748be51b670d8eb:583137054,06d7675172e31010d4292b0fdda11003:-753017715,05c7a71190e31010a260d8a221cc0a79:583137054,b3374399ae631010bd15b7d966faa17a:600921492,3dd68b997a6310105136a1e187dd8d0a:-1838430395,3465435951631010022c5192dfbfec3f:-429534009,c345c35927631010abb1d2c46c78c215:2009817878,9da4cf19cb6310103be64c5192bea8f6:265921117,41c24fd5c5631010017bf334b5c54271:-788647860,3ea2cbd59a631010ded0c96db5c9bdf6:777127050,8ca2cb95066310104c1975b3e201bb4c:-1063004856,0652c79544631010f68afc21f4e7a7a5:211190783</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-29 02:41:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>67a8788eaa074978adab29cee8534304</sys_id>
+        <sys_metadata>a231cb95db6310100080e1bb4b961946</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TimeCardUtil</sys_name>
+        <sys_package display_value="Verizon Time Card App" source="x_537510_verizon_t">bdc95024db2310100080e1bb4b9619d0</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Verizon Time Card App">bdc95024db2310100080e1bb4b9619d0</sys_scope>
+        <sys_scope_delete display_value="">2ff46ea50c6143d6bcc6f09d3a4988a4</sys_scope_delete>
+        <sys_update_name>sys_script_include_a231cb95db6310100080e1bb4b961946</sys_update_name>
+        <sys_update_version display_value="sys_script_include_a231cb95db6310100080e1bb4b961946">4acfeb95dbe310100080e1bb4b961941</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-29 02:41:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

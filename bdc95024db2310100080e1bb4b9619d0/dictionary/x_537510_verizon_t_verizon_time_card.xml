@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Verizon Time Card" max_length="40" name="x_537510_verizon_t_verizon_time_card" sizeclass="97" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="completed tasks" label="Category" max_length="40" name="u_category_10" type="string">
+            <choice>
+                <element inactive_on_update="false" label="completed tasks" sequence="0" value="completed tasks"/>
+                <element inactive_on_update="false" label="meeting" sequence="1" value="meeting"/>
+                <element inactive_on_update="false" label="training" sequence="2" value="training"/>
+                <element inactive_on_update="false" label="job specific tasks" sequence="3" value="job specific tasks"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Employee" max_length="32" name="u_employee" reference="sys_user" reference_qual="company=f5af9068db2310100080e1bb4b9619f2^EQ" reference_qual_condition="company=f5af9068db2310100080e1bb4b9619f2^EQ" type="reference"/>
+        <element label="Monday" max_length="40" name="u_float_1" type="float"/>
+        <element label="Tuesday" max_length="40" name="u_float_2" type="float"/>
+        <element label="Wednesday" max_length="40" name="u_float_3" type="float"/>
+        <element label="Thursday" max_length="40" name="u_float_4" type="float"/>
+        <element label="Friday" max_length="40" name="u_float_5" type="float"/>
+        <element label="Total" max_length="40" name="u_float_6" type="float"/>
+        <element label="Friday" max_length="15" name="u_friday" type="decimal"/>
+        <element label="Monday" max_length="15" name="u_monday" type="decimal"/>
+        <element attributes="encode_utf8=false" label="Verizon Tasks" max_length="32" name="u_reference_1" reference="x_537510_verizon_t_verizon_time_card" type="reference"/>
+        <element label="Thursday" max_length="15" name="u_thursday" type="decimal"/>
+        <element label="Total" max_length="15" name="u_total" type="decimal"/>
+        <element label="Tuesday" max_length="15" name="u_tuesday" type="decimal"/>
+        <element label="Wednesday" max_length="15" name="u_wednesday" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Week starts on" max_length="40" name="u_week_starts_on" type="glide_date"/>
+    </element>
+</database>
